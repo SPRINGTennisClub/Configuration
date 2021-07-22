@@ -25,3 +25,7 @@ spring:
           uri: lb://court-service
           predicates:
             - Path=/courtList
+        - id: lb-route
+            uri: lb://application
+            predicates:
+              - Path=/clubInterface
