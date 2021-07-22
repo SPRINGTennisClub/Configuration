@@ -20,8 +20,8 @@ spring:
         - id: lb-route
           uri: lb://player-service
           predicates:
-            - Path=/**
+            - Path=/homePage
         - id: lb-route
           uri: lb://court-service
           predicates:
-            - Path=/**
+            - Path=/courtList
